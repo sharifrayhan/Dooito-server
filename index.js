@@ -41,7 +41,7 @@ app.get("/users/:id", userController.getSingleUser);
 // Users
 app.get("/tasks", taskController.allTasks);
 app.post("/tasks", taskController.createTask);
-app.put("/tasks", taskController.updateTask);
+app.put("/tasks/:id", taskController.updateTask);
 app.get("/tasks/:id", taskController.singleTask);
 app.delete("/tasks/:id", taskController.deleteTask);
 
