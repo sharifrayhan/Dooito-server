@@ -55,4 +55,4 @@ const getSingleUser = async (req, res) => {
   }
 };
 
-module.exports = { createUser, getAllUsers, getSingleUser, updateUser };
+module.exports = { createUser, getAllUsers, getSingleUser};
