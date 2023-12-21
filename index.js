@@ -32,6 +32,13 @@ app.listen(PORT, () => {
 });
 
 
+const userController = require('./src/controllers/userController'); 
+
+// Users
+app.post('/users', userController.createUser);
+app.get('/users',userController.getAllUsers);
+app.get('/users/:id', userController.getSingleUser);
+
 
 app.get('/', (req, res) => {
     res.send('Welcome to Wandelo Server!')
